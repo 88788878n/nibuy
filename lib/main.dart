@@ -8,5 +8,6 @@ import 'package:intermediate/nibuy/home/nibuyhome.dart';
 void main() {
   runApp(MaterialApp(
     home:Nibuyhome(),
+    debugShowCheckedModeBanner: true,
   ));
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intermediate/nibuy/home/bottomnavigotion.dart';
 import 'package:intermediate/nibuy/home/drawer.dart';
+import 'package:intermediate/nibuy/home/shops.dart';
 class Nibuyhome extends StatefulWidget {
   const Nibuyhome({Key? key}) : super(key: key);
 
@@ -25,12 +26,13 @@ class _NibuyhomeState extends State<Nibuyhome> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10),
-            child: Icon(FontAwesomeIcons.locationDot),
+            child: IconButton( onPressed: () {  }, icon: Icon(FontAwesomeIcons.locationDot,)),
           )
         ],
 
 
       ),
+      body: Shops(),
 
     );
   }
