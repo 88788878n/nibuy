@@ -29,11 +29,11 @@ class Drawerlis extends StatelessWidget {
         // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
-            const DrawerHeader(
+             DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Nibuy'),
+              child: Image.asset("assset/logo/logo b.jpg"),
             ),
             ListTile(
               leading: Icon(

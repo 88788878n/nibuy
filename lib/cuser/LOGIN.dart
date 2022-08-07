@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nibuy/cuser/home.dart';
 import 'package:nibuy/cuser/signing.dart';
 
 class Clogin extends StatefulWidget {
@@ -69,8 +70,7 @@ class _CloginState extends State<Clogin> {
                 child: ElevatedButton(
                   child: const Text('Login'),
                   onPressed: () {
-                    print(nameController.text);
-                    print(passwordController.text);
+                    Navigator.push(context, MaterialPageRoute(builder: (ctx)=>Nibuyhome()));
                   },
                 )),
             Row(
